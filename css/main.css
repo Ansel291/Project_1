@@ -1,194 +1,49 @@
-/*div#memory_board {
-	background: #CCC;
-	border: #999 1px solid; 
-	width: 800px;
-	height: 540px;
-	padding: 24px;
-	margin: 0 auto;
-
-}
-
-div#memory_board > div{
-	background-color: black;
-	border: #000 1px solid;
-	width: 71px;
-	height: 71px;
-	float: left;
-	margin: 10px;
-	padding: 20px;
-	font-size: 64px;
-	cursor: pointer;
-	text-align: center;
+/*body {
+	background: url('../img/wood.jpg');
+	background-size: cover;
+    background-position: center;
+    margin: 0 auto;
 }*/
 
-.container {
-	margin: 0 auto;
+/*.container {
 	width: 556px;
 	height: 575px;
 	margin: 0 auto;
-	margin-top: 75px;
+	margin-top: 150px;
+/*	background-color: red;*/
+
+
+
+#output, #output2 {
+	background: grey;
+	width: 102px;
+	height: 25px;
+	text-align: center;
+	border-radius: 5px;
+	vertical-align: center;
+	display: inline-block;
+	margin: 4px ;
 }
 
-.square {
+/*div .square {
+	
+		display: inline-block;	
+		
+}
+
+img {
+	display: inline-block;	
+	display: inline-block;
 	width: 100px;
 	height: 125px;
 	background: url('../img/wanted.jpg');
 	border-radius: 7.5px;
 	margin: 4px;
-	display: inline-block;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
 }
 
-.square:hover {
-	background-color: rgba(0, 0, 0, .20);
-}
 
-.docHollidayA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.docHollidayB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.josephineA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.josephineB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.billyTheKidA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.billyTheKidB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.wyattEarpA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.wyattEarpB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.madameMustacheA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.madameMustacheB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.batMastersonA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.batMastersonB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.jesseJamesA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.jesseJamesB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.bonnieAndClydeA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.bonnieAndClydeB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.butchCassidyA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.butchCassidyB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.buffaloBillA {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.buffaloBillB {
-	position: absolute;
-	display: none;
-	border-radius: 7.5px;
-}
-
-.docHollidayText {
-	position: absolute;
-	margin-left: 453px;
-	margin-top: -18.5px;
-	display: none;
-	font-family: 'Sancreek', cursive;
-	font-size: 17px;
-	color: rgba(0, 0, 0, .725 );
-}
-
-.josephineText {
-	position: absolute;
-	margin-left: 462.5px;
-	margin-top: -18.5px;
-	display: none;
-	font-family: 'Sancreek', cursive;
-	font-size: 17px;
-	color: rgba(0, 0, 0, .725 );
-}
-
-.billyTheKidText {
-	position: absolute;
-	margin-left: 455px;
-	margin-top: -18.5px;
-	display: none;
-	font-family: 'Sancreek', cursive;
-	font-size: 17px;
-	color: rgba(0, 0, 0, .725 );
-}
+p {
+	vertical-align: center;
+}*/
 
