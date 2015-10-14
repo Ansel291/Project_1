@@ -22,11 +22,25 @@ var isFirstCard = true;
 var faces = new Array(
  
  'img/docHollidayA.jpg', 
- 'img/wyattEarpA.jpg', 
+ 'img/docHollidayA.jpg',
  'img/billyTheKidA.jpg', 
  'img/billyTheKidA.jpg', 
  'img/wyattEarpA.jpg', 
- 'img/docHollidayA.jpg'
+ 'img/wyattEarpA.jpg', 
+ 'img/josephineA.jpg',
+ 'img/josephineA.jpg',
+ 'img/bonnieAndClydeA.jpg',
+ 'img/bonnieAndClydeA.jpg',
+ 'img/batMastersonA.jpg',
+ 'img/batMastersonA.jpg',
+ 'img/madameMustacheA.jpg',
+ 'img/madameMustacheA.jpg',
+ 'img/jesseJamesA.jpg',
+ 'img/jesseJamesA.jpg',
+ 'img/butchCassidyA.jpg',
+ 'img/butchCassidyA.jpg',
+ 'img/buffaloBillA.jpg',
+ 'img/buffaloBillA.jpg'
 );
 
 var numOfMatches =.5*faces.length; 
@@ -40,19 +54,19 @@ if (turns===2) {
 	return;
 }
 	if (turns===0) {
-	firstchoice = card;
-  	if (isFirstCard) {
-  		if (player === 1) {
-  			$('#output').text("00:00:00");
-          	$('#output2').text("00:00:00");
-  		}
-  		raceStartTime = new Date;
-  		isFirstCard = false;
-  		startTimer();
-  	}
-  	document.images[card].src = faces[card];
-  	document.querySelector("#noiseone").play();
-  	turns = 1;
+		firstchoice = card;
+	  	if (isFirstCard) {
+	  		if (player === 1) {
+	  			$('#output').text("0:0 Sec");
+	          	$('#output2').text("0:0 Sec");
+	  		}
+	  		raceStartTime = new Date;
+	  		isFirstCard = false;
+	  		startTimer();
+	  	}
+	  	document.images[card].src = faces[card];
+	  	document.querySelector("#noiseone").play();
+	  	turns = 1;
   	} else { 
   		turns = 2;
   		secondchoice = card;
@@ -81,8 +95,6 @@ function check() {
           	score = 0;
           	(player === 1 ? player =2 : player =1); 
           	var choice;
-       //    document.images[firstchoice].src = backcard;
-    	  // document.images[secondchoice].src = backcard;
        		cntr = 0;
        		newBoard();
        		shuffle();
@@ -91,8 +103,10 @@ function check() {
       return ;
     }
   else {
-    document.images[firstchoice].src = backcard;
-    document.images[secondchoice].src = backcard;
+  	setTimeout(function(){
+	    document.images[firstchoice].src = backcard;
+   		document.images[secondchoice].src = backcard;
+  	},500);
     turns = 0;
     return ;
        }
@@ -130,7 +144,7 @@ function newBoard() {
 
 //Function for starting and stopping 
 
-
+// 
 
 var raceTimer;
 var raceStartTime = new Date;
@@ -140,8 +154,8 @@ startTimer = function () {
 raceTimer = setInterval(function() {
 		raceEndTime = new Date;
 		if (player === 1) {
-		$('#output').text(((raceEndTime - raceStartTime)/1000).toFixed(1) + " Seconds"); } else {
-			$('#output2').text(((raceEndTime - raceStartTime)/1000).toFixed(1) + " Seconds");}
+		$('#output1').text(((raceEndTime - raceStartTime)/1000).toFixed(1) + " Sec"); } else {
+			$('#output2').text(((raceEndTime - raceStartTime)/1000).toFixed(1) + " Sec");}
 		}, 100);
 	
 }
