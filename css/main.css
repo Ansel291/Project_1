@@ -13,6 +13,146 @@ body {
 	background: url('../img/greatTrainRobbery.png');
 }
 
+.containerInstruc {
+	width: 800px;
+	height: 575px;
+	margin: 0 auto;
+	margin-top: 150px;
+	background: url('../img/wantedBig.png');
+	display: none;
+}
+
+h3 {
+	font-size: 15px;
+	color: black;
+	font-family: 'Kadwa', serif;
+	position: absolute;
+	margin-top: 200px;
+	margin-left: 150px;
+	color: rgba(0, 0, 0, .75);
+}
+
+.containerPeople {
+	width: 800px;
+	height: 575px;
+	margin: 0 auto;
+	margin-top: 150px;
+/*	background: url('../img/wantedBig.png');*/
+	display: none;
+}
+
+#buffaloBill {
+	background: url('../img/buffaloBillA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#billyTheKid {
+	background: url('../img/billyTheKidA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#josephine {
+	background: url('../img/josephineA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#docHolliday {
+	background: url('../img/docHollidayA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#wyattEarp {
+	background: url('../img/wyattEarpA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#madameMustache {
+	background: url('../img/madameMustacheA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#butchCassidy {
+	background: url('../img/butchCassidyA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#bonnieAndClyde {
+	background: url('../img/bonnieAndClydeA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#batMasterson {
+	background: url('../img/batMastersonA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+#jesseJames {
+	background: url('../img/jesseJamesA.jpg');
+	margin-left: 32.5px;
+	margin-top: 50px;
+	width: 100px;
+	height: 125px;
+	border-radius: 7.5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+h4 {
+	color: white;
+	width: 135px;
+	height: 17.5px;
+	background-color: grey;
+	text-align: center;
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-left: 15px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
 .container {
 	width: 875px;
 	height: 575px;

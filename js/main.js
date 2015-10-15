@@ -3,6 +3,18 @@ console.log("active!")
 
 $( ".containerIntro" ).on( "click", function() {
     $( ".containerIntro" ).fadeOut( 1000, function(){
+       $( ".containerInstruc" ).fadeIn(1000);
+      });
+    });
+
+$( ".containerInstruc" ).on( "click", function() {
+    $( ".containerInstruc" ).fadeOut( 1000, function(){
+       $( ".containerPeople" ).fadeIn(1000);
+      });
+    });
+
+$( ".containerPeople" ).on( "click", function() {
+    $( ".containerPeople" ).fadeOut( 1000, function(){
        $( ".container" ).fadeIn(1000);
       });
     });
