@@ -1,6 +1,12 @@
 console.log("active!")
 
 
+$( ".containerIntro" ).on( "click", function() {
+    $( ".containerIntro" ).fadeOut( 1000, function(){
+       $( ".container" ).fadeIn(1000);
+      });
+    });
+
 // // Variables
 
 
@@ -73,7 +79,7 @@ if (turns===2) {
   		document.images[card].src =faces[card];
   		document.querySelector("#noisetwo").play();
   		check();
-  		// tid=setInterval("check()",1500);
+  		// tid=setInterval("check()",1000);
    	}
 }
 
