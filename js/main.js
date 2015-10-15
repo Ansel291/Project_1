@@ -57,7 +57,7 @@ if (turns===2) {
 		firstchoice = card;
 	  	if (isFirstCard) {
 	  		if (player === 1) {
-	  			$('#output').text("0:0 Sec");
+	  			$('#output1').text("0:0 Sec");
 	          	$('#output2').text("0:0 Sec");
 	  		}
 	  		raceStartTime = new Date;
@@ -83,33 +83,37 @@ if (turns===2) {
 the score increases by 1 point*/
 
 function check() {
- clearInterval(tid);
- if (faces[secondchoice]===faces[firstchoice]) {
-     cntr++;
-     score++;
-     if (cntr == numOfMatches) {
-    	// startPause();
+clearInterval(tid);
+if (faces[secondchoice]===faces[firstchoice]) {
+    cntr++;
+    score++;
+    if (cntr == numOfMatches) {
     		clearInterval(raceTimer);
 			alert("Congrats player " + player + "!  You made " + score + " matches!!!");
-          	isFirstCard = true;
-          	score = 0;
-          	(player === 1 ? player =2 : player =1); 
-          	var choice;
+       		isFirstCard = true;
+        	score = 0;
+        	if (player ===2) {
+        		declareWinner();
+        		}	
+        	(player === 1 ? player =2 : player =1); 
+        	// var choice;
        		cntr = 0;
-       		newBoard();
+			newBoard();
        		shuffle();
-         }
-     	turns = 0;
-      return ;
+
     }
-  else {
-  	setTimeout(function(){
+     	turns = 0;
+     return ;
+    }
+  	
+  		else {
+  			setTimeout(function(){
 	    document.images[firstchoice].src = backcard;
    		document.images[secondchoice].src = backcard;
   	},500);
     turns = 0;
     return ;
-       }
+    }
 }
 
 
@@ -158,6 +162,25 @@ raceTimer = setInterval(function() {
 			$('#output2').text(((raceEndTime - raceStartTime)/1000).toFixed(1) + " Sec");}
 		}, 100);
 	
+}
+
+
+//Declare Winner Function
+
+
+var $player1Time = $('#output1');
+var $player2Time = $('#output2');
+var player1Value;
+var player2Value;
+
+var declareWinner = function(player1Time, player2Time) {
+	player1Value = parseFloat($player1Time.html());
+	player2Value = parseFloat($player2Time.html());
+		if (player1Value < player2Value) {
+			alert("Player 1 finished with a time of " + player1Value + " seconds and player 2 finished with a time of " + player2Value + " seconds.  Player 1 wins!!");
+		} else {
+			alert("Player 1 finished with a time of " + player1Value + " seconds and player 2 finished with a time of " + player2Value + " seconds.  Player 2 wins!!");
+	}
 }
 
 
