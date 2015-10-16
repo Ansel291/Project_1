@@ -11,6 +11,7 @@ body {
 	height: 575px;
 	margin: 0 auto;
 	margin-top: 150px;
+	cursor: pointer;
 	background: url('../img/greatTrainRobbery.png');
 }
 
@@ -19,6 +20,7 @@ body {
 	height: 575px;
 	margin: 0 auto;
 	margin-top: 150px;
+	cursor: pointer;
 	background: url('../img/wantedBig.png');
 	display: none;
 }
@@ -34,6 +36,7 @@ h3 {
 }
 
 .containerPeople {
+	cursor: pointer;
 	width: 800px;
 	height: 575px;
 	margin: 0 auto;
@@ -108,6 +111,40 @@ h4 {
 	border-radius: 5px;
 	margin-right: 5px;
 	margin-left: 15px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+.containerHell {
+	width: 800px;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 215px;
+	cursor: pointer;
+	display: none;
+/*	background-color: red;*/
+}
+
+.kurtRussell {
+	width: 588px;
+	height: 254px;
+	background: url('../img/Hell.jpg');
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+h5 {
+	color: white;
+	font-size: 14px;
+	width: 588px;
+	height: 25px;
+	background-color: grey;
+	border-radius: 5px;
+	margin: 0 auto;
+	font-family: 'Kadwa', serif;
+	margin-top: 50px;
+	letter-spacing: 1px;
+	text-align: center;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
 }
 
@@ -196,34 +233,86 @@ h1 {
 	text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
 }
 
-.containerOneWins{
+.containerOneWinsPartOne{
 	width: 800px;
 	height: 575px;
 	margin: 0 auto;
-	margin-top: 165px;
+	margin-top: 125px;
 	/*background-color: red;*/
 	display: none;
 }
 
 .oneWinsPartOne {
-	width: 300px;
-	height: 375px;
+	width: 360px;
+	height: 475px;
 	background: url('../img/tombstone.jpg');
 	margin: 0 auto;
-/*	margin-top: 112.5px;*/
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
 }
 
+.containerOneWinsPartTwo {
+	width: 800px;
+	height: 575px;
+	margin: 0 auto;
+	margin-top: 125px;
+	display: none;
+}
+
+.oneWinsPartTwo {
+	width: 360px;
+	height: 475px;
+	background: url('../img/deadGuy.jpg');
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+.containerTwoWinsPartOne{
+	width: 800px;
+	height: 575px;
+	margin: 0 auto;
+	margin-top: 125px;
+	display: none;
+}
+
+.twoWinsPartOne {
+	width: 360px;
+	height: 475px;
+	background: url('../img/tombstone.jpg');
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+.containerTwoWinsPartTwo {
+	width: 800px;
+	height: 575px;
+	margin: 0 auto;
+	margin-top: 125px;
+	display: none;
+}
+
+.twoWinsPartTwo {
+	width: 360px;
+	height: 475px;
+	background: url('../img/deadGuy.jpg');
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+}
+
+
 h2 {
 	color: white;
 	font-size: 15px;
-	width: 300px;
+	width: 360px;
 	height: 35px;
 	background-color: grey;
 	border-radius: 5px;
 	margin: 0 auto;
 	margin-top: 40px;
+	letter-spacing: 1px;
 	text-align: center;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
 }

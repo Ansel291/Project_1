@@ -18,6 +18,12 @@ $( ".containerInstruc" ).on( "click", function() {
 
 $( ".containerPeople" ).on( "click", function() {
     $( ".containerPeople" ).fadeOut( 1000, function(){
+       $( ".containerHell" ).fadeIn(1000);
+    });
+});
+
+$( ".containerHell" ).on( "click", function() {
+    $( ".containerHell" ).fadeOut( 1000, function(){
        $( ".container" ).fadeIn(1000);
     });
 });
@@ -198,11 +204,23 @@ var declareWinner = function(player1Time, player2Time) {
 		if (player1Value < player2Value) {
 			alert("Player 1 finished with a time of " + player1Value + " seconds and player 2 finished with a time of " + player2Value + " seconds.  Player 1 wins!!");
 			$( ".container" ).fadeOut( 1000, function(){
-    		$( ".containerOneWins" ).fadeIn( 1000, function(){
-      	});
-    });
+    		$( ".containerOneWinsPartOne" ).fadeIn( 1000, function(){
+    		$( ".containerOneWinsPartOne" ).delay(4000).fadeOut( 1000, function(){
+    		$( ".containerOneWinsPartTwo" ).fadeIn( 1000, function(){
+      		});
+    	});
+	});
+});
 		} else {
 			alert("Player 1 finished with a time of " + player1Value + " seconds and player 2 finished with a time of " + player2Value + " seconds.  Player 2 wins!!");
+			$( ".container" ).fadeOut( 1000, function(){
+    		$( ".containerTwoWinsPartOne" ).fadeIn( 1000, function(){
+			$( ".containerTwoWinsPartOne" ).delay(4000).fadeOut( 1000, function(){
+    		$( ".containerTwoWinsPartTwo" ).fadeIn( 1000, function(){
+      		});
+  	 	});
+			});
+    	});
 	}
 }
 
