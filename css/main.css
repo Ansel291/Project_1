@@ -127,7 +127,7 @@ h4 {
 .kurtRussell {
 	width: 588px;
 	height: 254px;
-	background: url('./img/Hell.jpg');
+	background: url('../img/Hell.jpg');
 	margin: 0 auto;
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
@@ -135,7 +135,7 @@ h4 {
 
 h5 {
 	color: white;
-	font-size: 14px;
+	font-size: 13px;
 	width: 588px;
 	height: 25px;
 	background-color: grey;
