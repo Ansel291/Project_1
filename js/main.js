@@ -17,17 +17,14 @@ $( ".containerInstruc" ).on( "click", function() {
 });
 
 $( ".containerPeople" ).on( "click", function() {
-    $( ".containerPeople" ).fadeOut( 1000, function(){
-       $( ".containerHell" ).fadeIn(1000);
+    $( ".containerPeople" ).fadeOut( 1000, function() {
+       	$( ".containerHell" ).fadeIn( 1000, function() {
+       		$( ".containerHell" ).delay(3500).fadeOut(1000,function() {
+       			$( ".container" ).fadeIn(1000);
+       		});
+       	});
     });
 });
-
-$( ".containerHell" ).on( "click", function() {
-    $( ".containerHell" ).fadeOut( 1000, function(){
-       $( ".container" ).fadeIn(1000);
-    });
-});
-
 
 
 // Variables
@@ -48,26 +45,26 @@ var isFirstCard = true;
 //Array of Names
 
 var faces = [
- 'img/docHollidayA.jpg', 
- 'img/josephineA.jpg',
- 'img/billyTheKidA.jpg',
- 'img/wyattEarpA.jpg',
- 'img/madameMustacheA.jpg',
- 'img/batMastersonA.jpg',
- 'img/jesseJamesA.jpg',
- 'img/bonnieAndClydeA.jpg',
- 'img/buffaloBillA.jpg',
- 'img/butchCassidyA.jpg',
- 'img/butchCassidyA.jpg',
- 'img/wyattEarpA.jpg', 
- 'img/madameMustacheA.jpg',
- 'img/batMastersonA.jpg',
- 'img/josephineA.jpg',
- 'img/buffaloBillA.jpg',
- 'img/bonnieAndClydeA.jpg',
- 'img/jesseJamesA.jpg',
- 'img/docHollidayA.jpg',
- 'img/billyTheKidA.jpg'
+ 'img/docHolliday.jpg', 
+ 'img/josephine.jpg',
+ 'img/billyTheKid.jpg',
+ 'img/wyattEarp.jpg',
+ 'img/madameMustache.jpg',
+ 'img/batMasterson.jpg',
+ 'img/jesseJames.jpg',
+ 'img/bonnieAndClyde.jpg',
+ 'img/buffaloBill.jpg',
+ 'img/butchCassidy.jpg',
+ 'img/butchCassidy.jpg',
+ 'img/wyattEarp.jpg', 
+ 'img/madameMustache.jpg',
+ 'img/batMasterson.jpg',
+ 'img/josephine.jpg',
+ 'img/buffaloBill.jpg',
+ 'img/bonnieAndClyde.jpg',
+ 'img/jesseJames.jpg',
+ 'img/docHolliday.jpg',
+ 'img/billyTheKid.jpg'
 ];
 
 var numOfMatches =.5*faces.length; 
