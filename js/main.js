@@ -1,26 +1,30 @@
 console.log("active!")
 
 
+
+//Introductory Transitions
+
 $( ".containerIntro" ).on( "click", function() {
     $( ".containerIntro" ).fadeOut( 1000, function(){
        $( ".containerInstruc" ).fadeIn(1000);
-      });
     });
+});
 
 $( ".containerInstruc" ).on( "click", function() {
     $( ".containerInstruc" ).fadeOut( 1000, function(){
        $( ".containerPeople" ).fadeIn(1000);
-      });
     });
+});
 
 $( ".containerPeople" ).on( "click", function() {
     $( ".containerPeople" ).fadeOut( 1000, function(){
        $( ".container" ).fadeIn(1000);
-      });
     });
+});
 
-// // Variables
 
+
+// Variables
 
 var firstchoice;
 var secondchoice;
@@ -37,29 +41,28 @@ var isFirstCard = true;
 
 //Array of Names
 
-var faces = new Array(
- 
+var faces = [
  'img/docHollidayA.jpg', 
- 'img/docHollidayA.jpg',
- 'img/billyTheKidA.jpg', 
- 'img/billyTheKidA.jpg', 
- 'img/wyattEarpA.jpg', 
- 'img/wyattEarpA.jpg', 
  'img/josephineA.jpg',
- 'img/josephineA.jpg',
- 'img/bonnieAndClydeA.jpg',
- 'img/bonnieAndClydeA.jpg',
- 'img/batMastersonA.jpg',
- 'img/batMastersonA.jpg',
+ 'img/billyTheKidA.jpg',
+ 'img/wyattEarpA.jpg',
  'img/madameMustacheA.jpg',
- 'img/madameMustacheA.jpg',
+ 'img/batMastersonA.jpg',
  'img/jesseJamesA.jpg',
- 'img/jesseJamesA.jpg',
- 'img/butchCassidyA.jpg',
- 'img/butchCassidyA.jpg',
+ 'img/bonnieAndClydeA.jpg',
  'img/buffaloBillA.jpg',
- 'img/buffaloBillA.jpg'
-);
+ 'img/butchCassidyA.jpg',
+ 'img/butchCassidyA.jpg',
+ 'img/wyattEarpA.jpg', 
+ 'img/madameMustacheA.jpg',
+ 'img/batMastersonA.jpg',
+ 'img/josephineA.jpg',
+ 'img/buffaloBillA.jpg',
+ 'img/bonnieAndClydeA.jpg',
+ 'img/jesseJamesA.jpg',
+ 'img/docHollidayA.jpg',
+ 'img/billyTheKidA.jpg'
+];
 
 var numOfMatches =.5*faces.length; 
 
@@ -166,8 +169,6 @@ function newBoard() {
 
 //Function for starting and stopping 
 
-// 
-
 var raceTimer;
 var raceStartTime = new Date;
 var startTimer;
@@ -183,8 +184,8 @@ raceTimer = setInterval(function() {
 }
 
 
-//Declare Winner Function
 
+//Declare Winner Function
 
 var $player1Time = $('#output1');
 var $player2Time = $('#output2');
@@ -196,9 +197,15 @@ var declareWinner = function(player1Time, player2Time) {
 	player2Value = parseFloat($player2Time.html());
 		if (player1Value < player2Value) {
 			alert("Player 1 finished with a time of " + player1Value + " seconds and player 2 finished with a time of " + player2Value + " seconds.  Player 1 wins!!");
+			$( ".container" ).fadeOut( 1000, function(){
+    		$( ".containerOneWins" ).fadeIn( 1000, function(){
+      	});
+    });
 		} else {
 			alert("Player 1 finished with a time of " + player1Value + " seconds and player 2 finished with a time of " + player2Value + " seconds.  Player 2 wins!!");
 	}
 }
+
+
 
 
