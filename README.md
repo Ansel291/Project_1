@@ -127,6 +127,11 @@ As a player i want rules/instructions to the game
 
 [ ] As a player, i want to be able to enter my name so that my name will appear on the screen
 
+Note:
+
+For future references, when making updates from local server to production mode,
+must switch from "master branch" to "gh-pages"
+
 
 
 
