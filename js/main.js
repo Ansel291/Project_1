@@ -1,9 +1,10 @@
 console.log("active!")
 
 
-// Introductory jQuery Transitions of the Intro Image,
-// game description/directions, and the 10 individual
-// images with their names included
+/* Introductory jQuery Transitions of the Intro Image,
+game description/directions, and the 10 individual
+images with their names included. */
+
 
 $( ".containerIntro" ).on( "click", function() {
     $( ".containerIntro" ).fadeOut( 1000, function(){
@@ -28,7 +29,7 @@ $( ".containerPeople" ).on( "click", function() {
 });
 
 
-// Variables of the Card game
+// Variables of the Card game.
 
 var firstchoice;
 var secondchoice;
@@ -43,7 +44,7 @@ var isFirstCard = true;
 
 
 
-//Array of Names
+//  Array of Names of each individual character in the game.
 
 var faces = [
  'img/docHolliday.jpg',
@@ -72,7 +73,8 @@ var numOfMatches =.5*faces.length;
 
 
 
-//When player CHOOSES 2 cards
+/* When player CHOOSES 2 cards, one card flips over,
+the timer starts, and a gunshot noise file is produced. */
 
 function choose(card) {
 if (turns===2) {
@@ -104,8 +106,8 @@ if (turns===2) {
 
 
 
-/*Checking to see if 2 Cards Match, when a match is made,
-the score increases by 1 point*/
+/*  Checking to see if 2 Cards Match, when a match is made,
+the score increases by 1 point.  */
 
 function check() {
 clearInterval(tid);
@@ -143,7 +145,7 @@ if (faces[secondchoice]===faces[firstchoice]) {
 
 
 
-// Shuffles the Cards
+// Function that shuffles the Cards.
 
 function shuffle() {
 var holder;
@@ -161,7 +163,8 @@ var j;
 
 
 
-//Turns over cards and creates new board
+/*  Function that turns over cards and creates new board;
+Resets the board */
 
 function newBoard() {
 	for (var i = 0; i < faces.length; i++) {
@@ -171,7 +174,9 @@ function newBoard() {
 
 
 
-//Function for starting and stopping
+/* Function for starting and stopping the timer when
+transitioning between player one and player 2, and
+transitions from player 1's timer to player 2's timer */
 
 var raceTimer;
 var raceStartTime = new Date;
@@ -189,7 +194,7 @@ raceTimer = setInterval(function() {
 
 
 
-//Declare Winner Function
+//  Declaration of the Winner Function
 
 var $player1Time = $('#output1');
 var $player2Time = $('#output2');
