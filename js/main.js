@@ -2,7 +2,9 @@ console.log("active!")
 
 
 
-//Introductory Transitions
+// Introductory jQuery Transitions of the Intro Image,
+// game description/directions, and the 10 individual
+// images with their names included
 
 $( ".containerIntro" ).on( "click", function() {
     $( ".containerIntro" ).fadeOut( 1000, function(){
@@ -27,7 +29,7 @@ $( ".containerPeople" ).on( "click", function() {
 });
 
 
-// Variables
+// Variables of the Card game
 
 var firstchoice;
 var secondchoice;
@@ -45,7 +47,7 @@ var isFirstCard = true;
 //Array of Names
 
 var faces = [
- 'img/docHolliday.jpg', 
+ 'img/docHolliday.jpg',
  'img/josephine.jpg',
  'img/billyTheKid.jpg',
  'img/wyattEarp.jpg',
@@ -56,7 +58,7 @@ var faces = [
  'img/buffaloBill.jpg',
  'img/butchCassidy.jpg',
  'img/butchCassidy.jpg',
- 'img/wyattEarp.jpg', 
+ 'img/wyattEarp.jpg',
  'img/madameMustache.jpg',
  'img/batMasterson.jpg',
  'img/josephine.jpg',
@@ -67,14 +69,14 @@ var faces = [
  'img/billyTheKid.jpg'
 ];
 
-var numOfMatches =.5*faces.length; 
+var numOfMatches =.5*faces.length;
 
 
 
 //When player CHOOSES 2 cards
 
 function choose(card) {
-if (turns===2) { 
+if (turns===2) {
 	return;
 }
 	if (turns===0) {
@@ -91,7 +93,7 @@ if (turns===2) {
 	  	document.images[card].src = faces[card];
 	  	document.querySelector("#noiseone").play();
 	  	turns = 1;
-  	} else { 
+  	} else {
   		turns = 2;
   		secondchoice = card;
   		document.images[card].src =faces[card];
@@ -103,7 +105,7 @@ if (turns===2) {
 
 
 
-/*Checking to see if 2 Cards Match, when a match is made, 
+/*Checking to see if 2 Cards Match, when a match is made,
 the score increases by 1 point*/
 
 function check() {
@@ -118,8 +120,8 @@ if (faces[secondchoice]===faces[firstchoice]) {
         	score = 0;
         	if (player ===2) {
         		declareWinner();
-        		}	
-        	(player === 1 ? player =2 : player =1); 
+        		}
+        	(player === 1 ? player =2 : player =1);
         	// var choice;
        		cntr = 0;
 			newBoard();
@@ -129,7 +131,7 @@ if (faces[secondchoice]===faces[firstchoice]) {
      	turns = 0;
      return ;
     }
-  	
+
   		else {
   			setTimeout(function(){
 	    document.images[firstchoice].src = backcard;
@@ -170,7 +172,7 @@ function newBoard() {
 
 
 
-//Function for starting and stopping 
+//Function for starting and stopping
 
 var raceTimer;
 var raceStartTime = new Date;
@@ -183,7 +185,7 @@ raceTimer = setInterval(function() {
 		$('#output1').text(((raceEndTime - raceStartTime)/1000).toFixed(1) + " Sec"); } else {
 			$('#output2').text(((raceEndTime - raceStartTime)/1000).toFixed(1) + " Sec");}
 		}, 100);
-	
+
 }
 
 
