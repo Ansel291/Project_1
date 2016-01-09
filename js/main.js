@@ -1,7 +1,6 @@
 console.log("active!")
 
 
-
 // Introductory jQuery Transitions of the Intro Image,
 // game description/directions, and the 10 individual
 // images with their names included
