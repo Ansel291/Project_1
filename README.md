@@ -56,9 +56,9 @@ To play the game, sign onto the web address of the application and follow the pr
 ---
 
 ### Wireframe/ERD:
-![](http://i.imgur.com/RQVApb1.png) 
-![](http://i.imgur.com/EFK0Bna.png)
-![](http://i.imgur.com/FY7Ha1U.png)
+![](http://i.imgur.com/KQXS2FX.jpg) 
+![](http://i.imgur.com/F3hH81x.jpg)
+![](http://i.imgur.com/KfGqAN8.jpg)
 
 ---
 
