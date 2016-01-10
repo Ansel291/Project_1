@@ -20,9 +20,6 @@ The player that matches their cards the fastest and clears the entire board in t
 ---------| ---------- | ---------
 Jason **Asahara** | [GitHub](https://github.com/Ansel291) | [jasahara@yahoo.com](jasahara@yahoo.com)
 
-### Development Process:
-* Visit the [trello.com](https://trello.com/b/SMSwN4DV/five-guys) to see how this project was organized, planned, goals that were reached, user stories, and rough sketches.
-
 ###Technologies Used:
 
 HTML5, CSS3, JavaScript, jQuery, Heroku
