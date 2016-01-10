@@ -27,6 +27,8 @@ HTML5, CSS3, JavaScript, jQuery, Heroku
 
 ###Game Model/Design:
 
+![](http://i.imgur.com/BuHNExf.jpg) 
+
 The model for the game utilizes an array that stores the source information for each image correlating to each card.
 
 When two cards are chosen, a match is determined by comparing the source code of the first card selected to that of the second card.
