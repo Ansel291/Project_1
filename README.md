@@ -3,6 +3,7 @@
 
 #Wanted: Dead or Alive
 
+---
 
 ### The Product:
 
@@ -14,48 +15,54 @@ The object of the game is to select two cards of the same famous American west o
 
 The player that matches their cards the fastest and clears the entire board in the fastest time is the winner.
 
+---
+
 ### Created By:
 
 **Name** | **GitHub** | **Email** 
 ---------| ---------- | ---------
 Jason **Asahara** | [GitHub](https://github.com/Ansel291) | [jasahara@yahoo.com](jasahara@yahoo.com)
 
-###Technologies Used:
-
-HTML5, CSS3, JavaScript, jQuery, Heroku
-
-
 ###Game Model/Design:
 
 ![](http://i.imgur.com/BuHNExf.jpg) 
 
-The model for the game utilizes an array that stores the source information for each image correlating to each card.
-
-When two cards are chosen, a match is determined by comparing the source code of the first card selected to that of the second card.
-
-If the source of both cards match, then the computer will determine these two cards to be a match and will remain face up.
+The model for the game utilizes an array that stores the source information for each image correlating to each card.  When two cards are chosen, a match is determined by comparing the source code of the first card selected to that of the second card.  If the source of both cards match, then the computer will determine these two cards to be a match and will remain face up.
 
 There are 20 individual cards placed on a 4 row by 5 column board.
+Also, there is a turn for player 1, and turn for player 2.  Each player is being timed, and after each player's turn, the numerical values of each players time is compared.  And the winner who completes "matching" the board in the shortest time is the winner.
 
-There is a turn for player 1, and turn for player 2.  
+---
 
-Each player is being timed, and after each player's turn, the numerical values of each players time is compared.  And the winner who completes "matching" the board in the shortest time is the winner.
 
-###Installation:
+### Technologies Used:
+
+
+Communication | Collaboration | Design | Development | APIs | Deployment
+----| ---| --- | --- | --- | ---
+ [Standup meetings](https://en.wikipedia.org/wiki/Stand-up_meeting)| | | [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)| | [Git-Hub Pages](http://heroku.com/)
+ [Slack](https://slack.com/) | |  | [CSS3](http://www.w3schools.com/css/) |  | 
+ [Markdown](https://guides.github.com/features/mastering-markdown/)|  |  | [Bootstrap](http://getbootstrap.com/) | |
+ |  | | [JavaScript/jQuery](https://www.javascript.com/) | 
+ |  | | [GitHub](https://github.com/) |
+ |  | | [Sublime](http://www.sublimetext.com/) |
+
+---
+
+###Installations Required:
 
 To play the game, sign onto the web address of the application and follow the prompts and the game will load automatically with no installation required.
 
+---
 
-###Unsolved Problems/Major Hurdles:
+### Wireframe/ERD:
+![](http://i.imgur.com/RQVApb1.png) 
+![](http://i.imgur.com/EFK0Bna.png)
+![](http://i.imgur.com/FY7Ha1U.png)
 
-One of the major problems within the application is that if you press each card too quickly, the noise of the gunshot will not always fire on time.  I attempted to correct this problem by including two different sound sources by importing two separate gunshot.mp3 files.  Although this did help, it did not solve the problem entirely.
+---
 
-Other problems include sometimes the cards turn over when clicked upon (when clicking quickly), and sometimes when the cards match, a card will turn back over even though it has matched.
-
-Planned future features include the user being able to type in their name so that the computer stores their name as an inputvalue; and as a result, the game will be able to refer to each player by their name, and not as "Player 1" or "Player 2".
-
-
-####User Story:
+####User Stories:
 
 
 Wanted: Dead or Alive
@@ -70,12 +77,13 @@ As a player, I want some sort of notification for the start of the game.
 
 As a player i want rules/instructions to the game.
 
+---
 
-###MVP's!
+###Milestones/User Stories Accomplished:
 
-[x] 1.  As a player, there must be a timer that keeps track of each player's turn
+[x] As a player, there must be a timer that keeps track of each player's turn
 
-[x] 2.  As a player, I would like to see a list of 10 different figures (20 cards total).
+[x] As a player, I would like to see a list of 10 different figures (20 cards total).
 
 	* Doc Holiday
 	* Wyatt Earp
@@ -88,14 +96,11 @@ As a player i want rules/instructions to the game.
 	* Buffalo Bill
 	* Butch Cassidy
 
-[X] 3.  As a player, I would like the game to switch back and forth between player 1 and player 2.
+[X] As a player, I would like the game to switch back and forth between player 1 and player 2.
 
-[x] 4.  As a player, i would A winner to be declared between the two players.
+[x] As a player, i would A winner to be declared between the two players.
 
-[x] 5.  As a player, the cards must shuffle and be randomized.
-  
-
-###Completed User Stories:
+[x] As a player, the cards must shuffle and be randomized.
 
 [x] As a user, i want to interact with a randomized deck of cards.
 
@@ -125,13 +130,27 @@ As a player i want rules/instructions to the game.
 
 [x] As a player, i want identified who the winner is and who the loser is based on the time fastest taken to match the memory board.
 
-###Ice Box
+---
+
+###Upcoming Features:
 
 [ ] As a player, I want to be notified as to when each round starts
 
 [ ] As a players, I want to press a "Play Again" button so that I can replay the game. 
 
 [ ] As a player, i want to be able to enter my name so that my name will appear on the screen
+
+---
+
+###Unsolved Problems/Major Hurdles:
+
+One of the major problems within the application is that if you press each card too quickly, the noise of the gunshot will not always fire on time.  I attempted to correct this problem by including two different sound sources by importing two separate gunshot.mp3 files.  Although this did help, it did not solve the problem entirely.
+
+Other problems include sometimes the cards turn over when clicked upon (when clicking quickly), and sometimes when the cards match, a card will turn back over even though it has matched.
+
+Planned future features include the user being able to type in their name so that the computer stores their name as an inputvalue; and as a result, the game will be able to refer to each player by their name, and not as "Player 1" or "Player 2".
+
+---
 
 ###Note:
 
