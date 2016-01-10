@@ -1,5 +1,5 @@
 
-#[![We Crawl for Food](http://i.imgur.com/PN5dMnA.jpg)]
+#![We Crawl for Food](http://i.imgur.com/PN5dMnA.jpg)
 
 #Wanted: Dead or Alive
 
