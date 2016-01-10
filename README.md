@@ -157,6 +157,11 @@ Planned future features include the user being able to type in their name so tha
 For future references, when making updates from local server to production mode,
 must switch from "master branch" to "gh-pages"
 
+---
+
+####Copyrighted by:
+Jason Asahara 2015
+
 
 
 
