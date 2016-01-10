@@ -1,14 +1,31 @@
-#Description:
 
-This is an application for the name of a memory called "Wanted: Dead or Alive."
+#[![We Crawl for Food](http://i.imgur.com/PN5dMnA.jpg)]
+
+#Wanted: Dead or Alive
+
+
+### The Product:
+
+Wanted: Dead or alive a two-player memory game that involves the matching of the most famous lawmen/outlaws in the history of the American West.
+
+- [Click here to play Wanted: Dead or Alive](http://ansel291.github.io/Project_1/)
 
 The object of the game is to select two cards of the same famous American west outlaws/lawmen/women  consecutively with only two chances.  If two of the cards that were selected do not match, the cards will turn over and you will have to remember where each card was originally.
 
-The player that matches their cards the fastest and clears the entire board in the fastest time is the winner
+The player that matches their cards the fastest and clears the entire board in the fastest time is the winner.
 
-###Technologies:
+### Created By:
 
-html., css., javascript, jQuery
+**Name** | **GitHub** | **Email** 
+---------| ---------- | ---------
+Jason **Asahara** | [GitHub](https://github.com/Ansel291) | [jasahara@yahoo.com](jasahara@yahoo.com)
+
+### Development Process:
+* Visit the [trello.com](https://trello.com/b/SMSwN4DV/five-guys) to see how this project was organized, planned, goals that were reached, user stories, and rough sketches.
+
+###Technologies Used:
+
+HTML5, CSS3, JavaScript, jQuery, Heroku
 
 
 ###Game Model/Design:
@@ -21,17 +38,18 @@ If the source of both cards match, then the computer will determine these two ca
 
 There are 20 individual cards placed on a 4 row by 5 column board.
 
-There is a turn for player 1, and for player 2.  
+There is a turn for player 1, and turn for player 2.  
 
 Each player is being timed, and after each player's turn, the numerical values of each players time is compared.  And the winner who completes "matching" the board in the shortest time is the winner.
 
-###Get Started:
+###Installation:
 
-To play the game, sign onto the web address of the application and follow the prompts and the game will load automatically.
+To play the game, sign onto the web address of the application and follow the prompts and the game will load automatically with no installation required.
 
-###Next Steps:
 
-Problems within the application is that if you press each card to quickly, the gunshot will not always figure.  I attempted to correct this problem by including two different sound sources by importing two separate gunshot.mp3 files.  Although this did help, it did not solve the problem entirely.
+###Unsolved Problems/Major Hurdles:
+
+One of the major problems within the application is that if you press each card too quickly, the noise of the gunshot will not always fire on time.  I attempted to correct this problem by including two different sound sources by importing two separate gunshot.mp3 files.  Although this did help, it did not solve the problem entirely.
 
 Other problems include sometimes the cards turn over when clicked upon (when clicking quickly), and sometimes when the cards match, a card will turn back over even though it has matched.
 
@@ -45,13 +63,13 @@ Wanted: Dead or Alive
 
 The concentration memory game
 
-As a player, I want a timer to keep track of how long it is taking me to match all the cards on the board
+As a player, I want a timer to keep track of how long it is taking me to match all the cards on the board.
 
 As a player, I want some type of Start Button to start the game
 
-As a player, I want a some sort of notification for the start of the game
+As a player, I want some sort of notification for the start of the game.
 
-As a player i want rules/instructions to the game
+As a player i want rules/instructions to the game.
 
 
 ###MVP's!
@@ -71,18 +89,18 @@ As a player i want rules/instructions to the game
 	* Buffalo Bill
 	* Butch Cassidy
 
-[X] 3.  As a player, I would like the game to switch back and forth between player 1 and player 2
+[X] 3.  As a player, I would like the game to switch back and forth between player 1 and player 2.
 
-[x] 4.  As a player, i would A winner to be declared between the two players
+[x] 4.  As a player, i would A winner to be declared between the two players.
 
 [x] 5.  As a player, the cards must shuffle and be randomized.
   
 
 ###Completed User Stories:
 
-[x] As a user, i want to interact with a randomized deck of cards
+[x] As a user, i want to interact with a randomized deck of cards.
 
-[x] As a player, i want to be able to click on a card and the cards will turn over
+[x] As a player, i want to be able to click on a card and the cards will turn over.
 
 [x] As a player, when I click on a second card, and if the card matches the first, two matching cards will remain showing.
 
@@ -100,34 +118,23 @@ As a player i want rules/instructions to the game
 
 [x] As a player, when i click on each card, there is a gunshot sound.
 
-###Completed Tuesday, 10-14-15 
+[x] As a player, i want to have an introductory page that explains what the game is and how to play.
 
-[x] As a player, i want to have an introductory page that explains what the game is and how toplay
-
-
-### Completed Thursday, 10-15-15 
-
-[x] As a player, when i click the "play again" i want the 20 cards to be reshuffled
+[x] As a player, when i click the "play again" i want the 20 cards to be reshuffled.
 
 [x] As a player, when I don't select the two same cards, the cards will turn back over.
 
-[x] As a player, i want te identified who the winner and who the loser is based on the time it took to match the memory board
-
-
-###Ongoing User Stories
-
-[ ] As a player, i want to add text shadow to the text so that it is easier to read
-
-[ ] Add start buttons
-
-[ ] Play Again Button 
-
+[x] As a player, i want identified who the winner is and who the loser is based on the time fastest taken to match the memory board.
 
 ###Ice Box
 
+[ ] As a player, I want to be notified as to when each round starts
+
+[ ] As a players, I want to press a "Play Again" button so that I can replay the game. 
+
 [ ] As a player, i want to be able to enter my name so that my name will appear on the screen
 
-Note:
+###Note:
 
 For future references, when making updates from local server to production mode,
 must switch from "master branch" to "gh-pages"
