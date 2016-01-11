@@ -44,6 +44,10 @@ h3 {
 	display: none;
 }
 
+.wanted-headline {
+	color: white;
+}
+
 #buffaloBill {
 	background: url('../img/buffaloBill.jpg');
 }
