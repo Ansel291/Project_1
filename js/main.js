@@ -210,20 +210,34 @@ var declareWinner = function(player1Time, player2Time) {
     		$( ".containerOneWinsPartOne" ).fadeIn( 1000, function(){
     		$( ".containerOneWinsPartOne" ).delay(4000).fadeOut( 1000, function(){
     		$( ".containerOneWinsPartTwo" ).fadeIn( 1000, function(){
-      		});
-    	});
-	});
-});
+          $( ".play-again" ).on( "click", function() {
+            $( ".containerOneWinsPartTwo" ).fadeOut( 1000, function(){
+              $('#output1').text("0:0 Sec");
+              $('#output2').text("0:0 Sec");
+                $( ".container" ).fadeIn(1000);
+              });
+            });
+      	});
+      });
+	  });
+  });
 		} else {
 			alert("Player 1 finished with a time of " + player1Value + " seconds and player 2 finished with a time of " + player2Value + " seconds.  Player 2 wins!!");
 			$( ".container" ).fadeOut( 1000, function(){
     		$( ".containerTwoWinsPartOne" ).fadeIn( 1000, function(){
 			$( ".containerTwoWinsPartOne" ).delay(4000).fadeOut( 1000, function(){
     		$( ".containerTwoWinsPartTwo" ).fadeIn( 1000, function(){
-      		});
-  	 	});
-			});
-    	});
+          $( ".play-again" ).on( "click", function() {
+            $( ".containerTwoWinsPartTwo" ).fadeOut( 1000, function(){
+              $('#output1').text("0:0 Sec");
+              $('#output2').text("0:0 Sec");
+                $( ".container" ).fadeIn(1000);
+      		    });
+  	 	      });
+			    });
+    	  });
+      });
+    });
 	}
 }
 
