@@ -320,6 +320,8 @@ h2 {
 	text-align: center;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
 	text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, .5);
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
 }
 
 .play-again {
