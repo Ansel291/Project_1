@@ -116,6 +116,8 @@ h4 {
 	margin-right: 5px;
 	margin-left: 15px;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.625);
+	padding-top: 1.5px;
+	padding-bottom: 1.5px;
 }
 
 .containerHell {
